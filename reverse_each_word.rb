@@ -5,7 +5,7 @@ def reverse_each_word(sentence)
   # in order to work with Enumerators
   array = sentence.split
   # set a new variable to store the array of reversed elements after .collect method
-  array.collect {|element| element.reverse}.join(" ")
+  reversed = array.collect {|element| element.reverse}
   # convert revered array back into string
-
+  reversed.join(" ")
 end
